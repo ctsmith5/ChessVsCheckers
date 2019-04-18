@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1FD4C12268EFD200EEB7EE /* ChessPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1FD4C02268EFD200EEB7EE /* ChessPlayer.swift */; };
+		AF1FD4C52268F22B00EEB7EE /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1FD4C42268F22B00EEB7EE /* GameBoardViewController.swift */; };
 		AF83501122683A6100F314F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF83501022683A6100F314F1 /* AppDelegate.swift */; };
-		AF83501622683A6100F314F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF83501422683A6100F314F1 /* Main.storyboard */; };
 		AF83501822683A6400F314F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF83501722683A6400F314F1 /* Assets.xcassets */; };
 		AF83501B22683A6400F314F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF83501922683A6400F314F1 /* LaunchScreen.storyboard */; };
-		AF835023226841EC00F314F1 /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF835022226841EC00F314F1 /* GameBoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF1FD4C02268EFD200EEB7EE /* ChessPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessPlayer.swift; sourceTree = "<group>"; };
+		AF1FD4C42268F22B00EEB7EE /* GameBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
 		AF83500D22683A6100F314F1 /* Chess vs. Checkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chess vs. Checkers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF83501022683A6100F314F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF83501522683A6100F314F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF83501722683A6400F314F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF83501A22683A6400F314F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF83501C22683A6400F314F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF835022226841EC00F314F1 /* GameBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,9 +35,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF1FD4BF2268EEFC00EEB7EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF1FD4C02268EFD200EEB7EE /* ChessPlayer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF1FD4C22268F1DE00EEB7EE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF1FD4C42268F22B00EEB7EE /* GameBoardViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AF1FD4C32268F1E900EEB7EE /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
 		AF83500422683A6100F314F1 = {
 			isa = PBXGroup;
 			children = (
+				AF1FD4C32268F1E900EEB7EE /* ModelController */,
+				AF1FD4C22268F1DE00EEB7EE /* ViewController */,
+				AF1FD4BF2268EEFC00EEB7EE /* Model */,
 				AF83500F22683A6100F314F1 /* Chess vs. Checkers */,
 				AF83500E22683A6100F314F1 /* Products */,
 			);
@@ -55,11 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				AF83501022683A6100F314F1 /* AppDelegate.swift */,
-				AF83501422683A6100F314F1 /* Main.storyboard */,
 				AF83501722683A6400F314F1 /* Assets.xcassets */,
 				AF83501922683A6400F314F1 /* LaunchScreen.storyboard */,
 				AF83501C22683A6400F314F1 /* Info.plist */,
-				AF835022226841EC00F314F1 /* GameBoardViewController.swift */,
 			);
 			path = "Chess vs. Checkers";
 			sourceTree = "<group>";
@@ -124,7 +148,6 @@
 			files = (
 				AF83501B22683A6400F314F1 /* LaunchScreen.storyboard in Resources */,
 				AF83501822683A6400F314F1 /* Assets.xcassets in Resources */,
-				AF83501622683A6100F314F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,21 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF83501122683A6100F314F1 /* AppDelegate.swift in Sources */,
-				AF835023226841EC00F314F1 /* GameBoardViewController.swift in Sources */,
+				AF1FD4C52268F22B00EEB7EE /* GameBoardViewController.swift in Sources */,
+				AF1FD4C12268EFD200EEB7EE /* ChessPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AF83501422683A6100F314F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF83501522683A6100F314F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF83501922683A6400F314F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
